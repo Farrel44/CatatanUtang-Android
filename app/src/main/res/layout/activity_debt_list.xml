@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catat Hutang"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"></TextView>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDebts"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_weight="1"
+        />
+
+    <EditText
+        android:id="@+id/etDebts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:id="@+id/etDebtsGiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a Name"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+    <DatePicker
+        android:id="@+id/dpDebtsDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    </DatePicker>
+
+    <Button
+        android:id="@+id/btnAddDebt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Debt"
+        android:layout_marginTop="8dp" />
+
+
+
+
+
+</LinearLayout>
